@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Casa Blanca Hookah Lounge</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Announcement Banner -->
+    <div id="announcement-banner" class="alert alert-info text-center" role="alert">
+        Loading announcement...
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Casa Blanca Hookah Lounge</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Schedule and Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center">About Us</h1>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <video src="Resources/lasers.mp4" autoplay loop muted playsinline class="img-fluid rounded" style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-md-6">
+                <h2>Welcome to Casa Blanca Hookah Lounge</h2>
+                <p>Established in 2010, Casa Blanca Hookah Lounge has been a cornerstone of the Lexington community, offering a unique and relaxing environment for hookah enthusiasts. Our lounge is designed to provide a comfortable and inviting atmosphere where you can unwind and enjoy a variety of premium hookah flavors.</p>
+                <p>Our mission is to create a memorable experience for our guests by combining exceptional service, high-quality products, and a welcoming ambiance. Whether you're here to relax with friends, celebrate a special occasion, or simply enjoy a quiet evening, Casa Blanca Hookah Lounge is the perfect destination.</p>
+                <p>We pride ourselves on our extensive selection of hookah flavors, sourced from the finest suppliers around the world. Our knowledgeable staff is always on hand to help you choose the perfect blend and ensure you have an enjoyable experience.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h2>Our Team</h2>
+                <p>Our team is dedicated to providing top-notch service and creating a welcoming environment for all our guests. Meet the people who make Casa Blanca Hookah Lounge a special place:</p>
+                <ul>
+                    <li><strong>Jengas</strong> - Owner and Founder</li>
+                    <li><strong>Jane Smith</strong> - Manager</li>
+                    <li><strong>Emily Johnson</strong> - Head Hookah Specialist</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="Resources/ring.png" alt="Staff" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+
+     <script>
+        fetch('announcements.json')
+            .then(response => response.json())
+            .then(data => {
+                const latestAnnouncement = data[data.length - 1];
+                document.getElementById('announcement-banner').innerText = latestAnnouncement.message;
+            })
+            .catch(error => {
+                console.error('Error fetching announcement:', error);
+                document.getElementById('announcement-banner').innerText = 'Failed to load announcement.';
+            });
+    </script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+</html>

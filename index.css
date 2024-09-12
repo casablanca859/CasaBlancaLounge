@@ -1,0 +1,172 @@
+/* index.css */
+/* index.css */
+ .btn-facebook {
+    background-color: #3b5998;
+    color: white;
+    }
+.btn-twitter {
+    background-color: #1da1f2;
+    color: white;
+    }
+.btn-instagram {
+    background-color: #e4405f;
+    color: white;
+    }
+.video-border {
+    border: 5px solid #000; /* Change the color and width as needed */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* Center the entire page content */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url("https://cdn.pixabay.com/photo/2017/03/17/22/47/smoke-2152833_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+ font-size: 50px;
+ margin-bottom: 20px;
+ color: rgb(56, 127, 197);
+ font-weight: 900;
+}
+/* Style the headings */
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+/* Container for the entire section */
+.container2 {
+    background-color: #e8a6f5; /* Light gray background */
+    padding: 20px;
+}
+
+/* Style the images */
+img {
+    border: 2px solid #ddd; /* Add a border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin: 10px; /* Add some spacing around the images */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Style the headings */
+h1.title_heading {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h3.Title_Heading_2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Style the list items */
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+.title_heading {
+    text-align: center
+    
+}
+.Title_Heading_2 {
+    text-align: center
+}
+.centerText {
+ text-align: center
+}
+ /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #e8a6f5;
+}
+.d20-button {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .d20-button:hover {
+        background-color: #555;
+    }
+
+    /* Style the d20 icon */
+    .d20-icon {
+        margin-right: 5px;
+    }
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+ #video-container {
+            position: relative;
+        }
+        #video {
+            width: 100%;
+            height: auto;
+        }
+        #text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
